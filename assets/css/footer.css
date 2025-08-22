@@ -1,12 +1,37 @@
 footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
+  width: 100%;
+  align-items: center;
 }
 
-footer img {
-    max-width: 100px;
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
+
+.footer .sociais {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer svg {
+  width: 32px;
+  height: 32px;
+  transition: 0.1s all ease-in-out;
+}
+.footer svg:hover {
+  filter: brightness(0.8);
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* footer img {
+  max-width: 100px;
+} */

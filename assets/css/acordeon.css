@@ -1,67 +1,69 @@
 .acordeon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    transition: .25s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+  /* border: 1px solid #fff; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  transition: 0.3s all ease;
 }
 
 .acordeon.open,
 .acordeon:hover {
-    background-color: #55569E;
-    border-color: #55569E;
+  background-color: #34285e;
+  border-color: transparent;
+  box-shadow: 0 0 10px 1px #7f6bc9a8;
 }
 
 .acordeon .trigger {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: #fff;
-    border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
 }
 
 .acordeon .trigger h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    text-align: start;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: start;
 }
 
 .acordeon .trigger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .acordeon .trigger::after {
-    content: '';
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/arrow-top.svg');
-    transition: .25s;
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/icons/arrow-top.svg");
+  transition: 0.25s;
 }
 
 .acordeon.open .trigger::after {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .acordeon .content {
-    overflow: hidden;
-    height: 0;
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .acordeon.open .content {
-    display: block;
-    padding: 0 1rem 1rem 2rem;
-    height: auto;
-    opacity: 1;
+  display: block;
+  padding: 0 1rem 1rem 2rem;
+  height: auto;
+  opacity: 1;
 }
