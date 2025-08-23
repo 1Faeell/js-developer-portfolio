@@ -89,8 +89,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  .main {
+    padding: 1rem 0.5rem;
+  }
+
   .header {
     gap: 1rem;
+    margin: 0;
   }
 
   .header .photo {
@@ -100,11 +105,12 @@ a:hover {
   .header .information {
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
   }
 
   .header .title {
     margin: 0rem 0;
+    text-align: center;
   }
 
   footer .footer {
@@ -113,7 +119,7 @@ a:hover {
     gap: 1rem;
     justify-content: center;
     text-align: center;
-    margin: 2.5rem 0;
+    margin-top: 3rem;
   }
   footer svg {
     margin-top: 1rem;
